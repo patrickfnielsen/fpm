@@ -1,0 +1,9 @@
+fileDirectory: ./backups
+matchers:
+    - name: interface stuff
+      regex:
+        pattern: interface (.*)
+        message: "Interface name %s is not valid"
+    - name: Python stuff
+      external:
+        binary: python.exe ./scripts/checker.py
